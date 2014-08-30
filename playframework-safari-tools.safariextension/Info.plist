@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Marius Soutier</string>
+	<key>Builder Version</key>
+	<string>9537.78.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>Playframework Dev</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.mariussoutier.playframework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<real>1048576</real>
+		<key>Global Page</key>
+		<string>page.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>scripts/keepScrollPosition.js</string>
+				<string>scripts/openInEditor.js</string>
+				<string>scripts/autoReload.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Playframework 2 Developer Tools for Safari</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>localhost</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://github.com/mariussoutier/playframework-safari-tools/playframework-safari-tools.safariextension/Info.plist</string>
+	<key>Website</key>
+	<string>https://github.com/mariussoutier/playframework-safari-tools</string>
+</dict>
+</plist>

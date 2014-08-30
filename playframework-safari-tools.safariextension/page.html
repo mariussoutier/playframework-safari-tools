@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    String.prototype.uppercaseFirst = function() {
+      var string = this;
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+
+    function respondToMessage(messageEvent) {
+      // Cheap KVO to get settings; injected scripts have no access to settings (d'oh)
+      if (messageEvent.name === "get") {
+        var value = safari.extension.settings[messageEvent.message];
+        var key = 'get' + messageEvent.message.uppercaseFirst();
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage(key, value);
+      } else if (messageEvent.name === 'openUrl') {
+        // Open URLs from the global page to avoid CORS console spam
+        var request = new XMLHttpRequest();
+        request.open('GET', messageEvent.message);
+        request.send();
+      }
+    }
+
+    safari.application.addEventListener('message', respondToMessage, false);
+  </script>
+</head>
+<body>
+</body>
+</html>
