@@ -25,3 +25,8 @@ possible to use a different port.
 
 For SublimeText, you can use [subl-handler](https://github.com/mariussoutier/subl-handler) and configure the URL to
 `subl://open/?file=/path/to/$file&line=$line`.
+
+## Installation
+
+You can download the latest version from the [releases](/releases) tab and install it via double-click. 
+Installation from the Safari gallery hopefully soon.
