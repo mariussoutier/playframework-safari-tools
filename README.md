@@ -28,5 +28,6 @@ For SublimeText, you can use [subl-handler](https://github.com/mariussoutier/sub
 
 ## Installation
 
-You can download the latest version from the [releases](/releases) tab and install it via double-click. 
+You can download the latest version from the 
+[releases](https://github.com/mariussoutier/playframework-safari-tools/releases) tab and install it via double-click. 
 Installation from the Safari gallery hopefully soon.
